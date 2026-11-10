@@ -1,0 +1,8 @@
+# Тестовый стек для проверки «Komodo выкатывает стек из git» (фаза 6б).
+# Порт 18085 из мира закрыт DOCKER-USER (mesh-only), как и все непубличные порты.
+services:
+  whoami:
+    image: traefik/whoami
+    restart: unless-stopped
+    ports:
+      - "18085:80"
